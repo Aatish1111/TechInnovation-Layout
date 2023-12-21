@@ -1,9 +1,11 @@
 import React from 'react'
 
-const TaskManager = () => {
+const TaskManager = ({ onClick }) => {
   return (
-    <div>TaskManager</div>
-  )
-}
+    <div onClick={onClick}>
+    TaskManager
+    </div>
+  );
+};
 
 export default TaskManager

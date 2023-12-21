@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Payroll = () => {
+const Payroll = ({onClick}) => {
   return (
-    <div>Payroll</div>
+    <div onClick={onClick}>
+    Payroll
+    </div>
   )
 }
 
