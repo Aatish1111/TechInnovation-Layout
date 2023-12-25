@@ -1,0 +1,54 @@
+/* Footer.css */
+
+footer {
+  /* background-color: #333; Dark background color */
+  color: #fff; /* Light text color */
+  /* padding: 40px 0;  */
+  margin-top: 0; /* Adjust the margin-top  as needed */
+}
+
+footer a {
+  color: #121212; /* Link color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h5 {
+  color: #ffc107; /* Heading color */
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #121212;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Styling for the copyright section */
+.text-center p {
+  margin: 0;
+}
+
+/* Optional: Add a border-top for separation */
+footer {
+  border-top: 1px solid #555; /* Darker border color */
+}
