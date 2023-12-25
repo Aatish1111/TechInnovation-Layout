@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Timesheet from './components/Timesheet';
 import TaskManager from './components/TaskManager';
@@ -10,35 +10,42 @@ import AdminToolbar from './components/AdminToolbar';
 import Middle from './components/Middle';
 
 const App = () => {
+
+    const [selectedComponent, setSelectedComponent] = useState(null);
+  
+    const handleComponentClick = (componentName) => {
+      setSelectedComponent(componentName);
+    };
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid mt-3">
+      <div className="row ">
         {/* Vertical Left Div */}
         <div className="col-md-3">
           <div className="mb-3">
-            <Timesheet />
+          <Timesheet onClick={() => handleComponentClick('Timesheet')} />
           </div>
           <div className="mb-3">
-            <TaskManager />
+          <TaskManager onClick={() => handleComponentClick('TaskManager')} />
           </div>
           <div className="mb-3">
-            <LeaveManagement />
+            <LeaveManagement onClick={() => handleComponentClick('LeaveManagement')}/>
           </div>
           <div className="mb-3">
-            <Payroll />
+            <Payroll onClick={() => handleComponentClick('Payroll')}/>
           </div>
           <div className="mb-3">
-            <Integrations />
+            <Integrations onClick={() => handleComponentClick('Integrations')}/>
           </div>
           <div className="mb-3">
-            <AdminToolbar />
+            <AdminToolbar onClick={() => handleComponentClick('AdminToolbar')}/>
           </div>
         </div>
 
         {/* Middle Div */}
-        <div className="col-md-6">
-          {/* Your content in the middle div */}
-          <Middle />
+        <div className="col-md-6 mt-5 w-40" >
+       <div>
+       You had clicked on <span className='text-danger'><Middle selectedComponent={selectedComponent} /> </span>component
+       </div>
         </div>
 
         {/* Vertical Right Div */}

@@ -1,8 +1,10 @@
 import React from 'react'
 
-const LeaveManagement = () => {
+const LeaveManagement = ({onClick}) => {
   return (
-    <div>LeaveManagement</div>
+    <div onClick={onClick}>
+    LeaveManagement
+    </div>
   )
 }
 

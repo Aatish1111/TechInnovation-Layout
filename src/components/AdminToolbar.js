@@ -1,8 +1,10 @@
 import React from 'react'
 
-const AdminToolbar = () => {
+const AdminToolbar = ({onClick}) => {
   return (
-    <div>AdminToolbar</div>
+    <div onClick={onClick}>
+    AdminToolbar
+    </div>
   )
 }
 

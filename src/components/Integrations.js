@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Integrations = () => {
+const Integrations = ({onClick}) => {
   return (
-    <div>Integrations</div>
+    <div onClick={onClick}>
+    Integrations
+    </div>
   )
 }
 
