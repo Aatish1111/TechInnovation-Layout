@@ -1,5 +1,6 @@
 // App.js
 import React, { useState } from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Timesheet from './components/Timesheet';
 import TaskManager from './components/TaskManager';
