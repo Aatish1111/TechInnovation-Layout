@@ -10,6 +10,7 @@ import Integrations from './components/Integrations';
 import AdminToolbar from './components/AdminToolbar';
 import Middle from './components/Middle';
 import Footer from './components/Footer'; // Assuming you have a Footer component
+import Chatbot from './components/Chatbot';
 
 const App = () => {
   const [selectedComponent, setSelectedComponent] = useState(null);
@@ -62,6 +63,7 @@ const App = () => {
         {/* Right Div */}
         <div className="col-md-3">
           {/* Content for the right div */}
+          <Chatbot/>
         </div>
       </div>
 

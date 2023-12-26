@@ -10,18 +10,27 @@
 .col-md-3 {
   width: 30%;
 }
-
-.col-md-6 {
-  width: 40%;
+.col-md-4-ml-4 >div{
+  width: 80%;
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
 }
-
+.col-md-6 {
+  width: 50%;
+}
+.col-md-4-ml-4{
+  padding: 10px;
+  border: 1px solid #bbb8b8; 
+  border-radius: 5px;
+}
 .text-danger {
   font-weight: bold;
 }
 
 .mb-3 {
   padding: 10px;
-  border: 1px solid #ddd; 
+  border: 1px solid #444242; 
   border-radius: 5px;
 }
 
@@ -33,6 +42,7 @@
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin-top: 20%;
 }
 
 .col-md-6 > div {
@@ -43,7 +53,7 @@
 }
 
 .row:nth-child(1) {
-  background-color: #007bff;
+  background-color: #13314d;
   color: white;
   padding: 10px;
 }
